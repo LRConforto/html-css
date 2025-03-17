@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <title>Imagens adaptativas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir este site em diversos dispositivos dieferentes ou simplesmente abra seu navegador em diversos tamanhos.</p>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>vamos aprender reproduzir audio em HTML5</p>
+
+    <!--Maneira mais simples de colocar abaixo.-->
+    <audio src="midia/John Carpenter - HALLOWEEN (2018) Theme.mp3" autoplay controls ></audio> <!--Para reproduzir o audio vc tem que colocar o parametro AutoPlay como ao lado, porém não funciona, acredito que dependa do navegador, porém o DR guanabara me falou que eu posso adicionar o controls como eu fiz ao lado e assim ele vai aparecer o controle ae eu só clico no play etc...-->
+
+    <!--MP3 WAV OGG-->
+
+    <audio preload="metadata" controls>
+        <source src="midia/John Carpenter - HALLOWEEN (2018) Theme.mp3" type="audio/mpeg"> <!--o type para arquivos mp3 é assim MPEG-->
+        <source src="midia/John Carpenter - HALLOWEEN (2018) Theme.ogg" type="audio/ogg"> <!--para o ogg é OGG mesmo-->
+        <source src="midia/John Carpenter - HALLOWEEN (2018) Theme.wav" type="audio/wav"> <!--para wav é wav mesmo tbm-->
+        <!--Lembrando que como nas imagens, a ordem é mto importante, ele vai carregar primeiro o primeiro, se não conseguir ele vai para outro e assim sucessivamente  -->
+        <p>infelizmente seu navegador não consegue reproduzir audio</p>
+        <a href="midia/John Carpenter - HALLOWEEN (2018) Theme.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+
+</body>
+</html>

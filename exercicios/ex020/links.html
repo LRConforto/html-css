@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body { 
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+    div:hover { 
+        font-weight: bold;
+    }
+    
+    div > ul { 
+        display: none;
+        font-weight: normal;
+    }
+
+    div:hover > ul {
+        display: block;
+        color: black;
+    }
+
+    a { 
+        color:blue;
+        text-decoration: none;        
+    }
+
+    a:hover {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .especial::after { 
+        content: ' ✿';
+    }
+
+    .especial::before { 
+        content: '✿ ';
+    }
+
+    a:visited {
+        color:blueviolet;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <div>Lista
+    <ul>
+            <li><a href="https://github.com/" target="_blank">Repositório GIT HUB</a> </li>
+            <li><a class="especial" href="https://youtube.com/" target="_blank">Canal do Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank">Site curso em video</a></li>
+            <li><a class="especial" href="https://facebook.com/" target="_blank">Facebook</a></li>
+
+    </ul>
+</div>
+</body>
+</html>

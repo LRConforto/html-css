@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos hospedados diretamente no meu site</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>esse video esta hospedado diretamante no meu servidor</p>
+
+  <!-- <video src="midia/12919604_3840_2160_60fps.mp4" width="600px;" autoplay muted loop></video> -->  <!--Maneira simples de adicionar video no código-->
+
+    <video autoplay muted loop controls width="700px;" poster="imagens/capa.jpeg">
+        <source src="midia/12919604_3840_2160_60fps.mp4" type="video/mp4">
+        <source src="midia/12919604_3840_2160_60fps.webm" type="video/webm">
+        <p>seu navegador não tem compatibilidade para vídeo</p>
+
+    </video>
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKqnVbllY5A?si=JislV2K2bw3lxVfp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    
+    <iframe src="https://player.vimeo.com/video/426720131?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Alok &amp; Bhaskar - Fuego"></iframe>
+</body>
+
+</html>

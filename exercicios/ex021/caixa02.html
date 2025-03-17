@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            
+        }
+
+        nav > a:hover { 
+            font-weight: bold;
+        }
+
+
+        main { 
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 6px 6px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        
+        article { 
+            background-color: rgb(177, 176, 176);   
+            padding:5px;
+            
+        }
+
+        article > aside { 
+            background-color: rgb(131, 131, 131);
+        }
+
+        footer{ 
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        
+        }
+        div#bola {
+            height: 100px;
+            width: 100px; 
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%; /* se vc deixar o border radius em 50% ele vira uma bola */
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!-- Em vez de vermos de usarmos <div> vamos utilizar outras tags que são consideradas div mas com uma semantica especifica para cada coisa-->
+    <header>
+        <h1>My WebSite</h1>
+        <nav><a href="https://www.twitter.com/P__E__K" target="_blank">Twitter</a>
+             <a href="https://www.facebook.com" target="_blank">Facebook</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta ex praesentium accusamus rem veritatis earum deleniti voluptatum sequi modi, assumenda debitis sed ipsam, blanditiis delectus quo explicabo quidem eos.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por lucas</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
