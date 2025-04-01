@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela { 
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatibus officiis eos voluptates obcaecati ab neque? Officia, voluptatibus, atque, unde libero dolorem impedit odio dolorum inventore odit reiciendis voluptatum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nulla soluta blanditiis maiores unde deleniti nam libero labore, voluptatem et, modi est? Velit nihil cumque provident iure accusamus porro similique!
+    </p>
+    
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui velit fugit, aut alias modi debitis nihil blanditiis officiis maiores ullam? Excepturi quas soluta, tempore veritatis sint deleniti nisi inventore ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto itaque quod deleniti officiis aspernatur! Quia architecto ea at vel eligendi. Fugiat deserunt minima, magni quaerat accusantium amet officia beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur omnis eum doloremque delectus labore, dicta consectetur magni sed beatae explicabo. Facilis provident quae necessitatibus beatae tenetur non reprehenderit, rem molestiae.</p>
+
+    <iframe srcdoc="<h1> Conteúdo estatico que vai aparecer quando carregar a página</h1> <p>Você pode adicionar codigo html diretamente no iframe com o parametro srcdoc, porém não é o recomendavel</p>" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compativel com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus, dolorem repellat laboriosam exercitationem culpa! Architecto officia alias id magni. Quis perferendis nisi illo minima. Eligendi harum maxime modi hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sint nobis, illum ad laudantium expedita, nam reiciendis officiis, nihil commodi vel eos dicta. Quia debitis autem, modi sit quas perspiciatis?</p>
+</body>
+</html>
