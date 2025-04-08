@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Form</h1>
+    <form action="cadastro.php" method="">
+        <p>
+            <label for="in1">Numero 1: </label>
+            <input type="number" name="numero1" id="in1" min="1" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Numero 2: </label>
+            <input type="number" name="numero2" id="in2" min="1" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"
+            >
+            <!-- Vamos entender: isoma é o id do output innetHTML é o html que esta dentro do output ou seja o 0, Number considera um numero e o in1.value  eo in2.value é o valor que se encontra dentro dos inputs n1 e n2 e soma os 2. -->
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
