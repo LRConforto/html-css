@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BFBFBF;
+}
+
+#banner {
+    height: 200px;
+    background-image: url(../imagens/salsichateste.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+header { 
+    background-color: #127369;
+    color: white;
+}
+
+header > h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+#burger { 
+    display:block;
+    text-align: center;
+    background-color: #082926;
+    padding: 10px; 
+    color: rgba(255, 255, 255, 0.795);
+}
+
+#burger:hover {
+    background-color: #BFBFBF;
+    color: black;
+    cursor: pointer;
+ }
+
+menu { 
+    background-color: #10403B;
+    display: none;
+}
+
+menu > ul { 
+    text-align: center;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid #127369c2;
+}
+
+menu > ul > li > a:hover { 
+    background-color: #0d302c; ;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.63);
+    max-width: 1080px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom:20px; 
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459);
+}
+
+article h2 { 
+padding: 10px 10px 20px 10px;
+}
+
+article p {
+    text-align: justify;
+    padding-bottom: 20px;
+    text-indent: 20px;
+}
