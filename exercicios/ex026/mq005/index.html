@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />   
     <script src="script.js"></script>
 
     <title>Media Query</title>
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <section id="banner"></section>
     <header>
         <h1>Salsicha</h1>
         <span  id="burger" class="material-symbols-outlined" onclick="clickMenu()">pets</span>          
         <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Raças</a></li>
+                <li><a href="#">Clinicas Veterinárias</a></li>
+                <li><a href="#">Bem estar</a></li>
+                <li><a href="#">Brinquedos</a></li>
+                <li><a href="#">Higiene e Beleza</a></li>
             </ul>
         </menu>
     </header>

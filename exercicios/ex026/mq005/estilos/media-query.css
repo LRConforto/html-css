@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Typical Devices Breakpoints
+Pequenas telas:
+Celular:0 - 480px
+Tablet:481 - 768
+Desktop: 769 - 1279
+Large e Televisão: 1280+
+Grandes telas:
+*/
+
+@media print { 
+
+    * { 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1,5em;
+        line-height: 1,5em;
+    }
+    menu { 
+        display: none;
+    }
+
+    span#burger { 
+        display: none;
+    }
+
+    #banner { 
+        display: none;
+    }
+
+    main { 
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    span#burger {
+        display: none;
+    }
+
+    menu { 
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        border-top: 0px;
+    }
+
+    menu > ul > li > a { 
+        border-top: 0px;
+
+    }
+    
+    main { 
+        max-width: 1200px;
+    }
+}

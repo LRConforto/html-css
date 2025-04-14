@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { 
+    --roboto: "Roboto", sans-serif; 
+}
 
 * {
     margin: 0px;
@@ -25,6 +30,10 @@ header {
 }
 
 header > h1 {
+    font-family: var(--roboto);
+    font-weight: bolder;
+    font-size: 2.5em;
+    text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.555);
     padding: 15px;
     text-align: center;
 }
@@ -43,7 +52,9 @@ header > h1 {
     cursor: pointer;
  }
 
-menu { 
+menu {
+    font-family: var(--roboto);
+    font-weight: bolder;
     background-color: #10403B;
     display: none;
 }
@@ -69,19 +80,27 @@ main {
     background-color: rgba(255, 255, 255, 0.63);
     width: 90vw;
     margin: auto;
-    padding: 10px;
+    padding: 30px;
     margin-top: 20px;
     margin-bottom:20px; 
     border-radius: 10px;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.459);
 }
 
-article h2 { 
+article h2 {
+font-family: var(--roboto); 
 padding: 10px 10px 20px 10px;
 }
 
 article p {
+    line-height: 1.5em;
     text-align: justify;
     padding-bottom: 20px;
     text-indent: 20px;
+}
+
+article::after { 
+    content: 'Texto retirado da internet: https://www.petz.com.br/cachorro/racas/dachshund/';
+    font-style: italic;
+    color: rgba(99, 98, 98, 0.781)
 }
