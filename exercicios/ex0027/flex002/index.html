@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <STYLE>
+
+        * { 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.container {
+            width: 50%;
+            display: flex;
+            flex-direction: row;             
+        }
+        div.container2{ 
+            width:50%;
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        div.container3{
+            width: 10%; 
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        div.container4{ 
+            width: 10%;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.item { 
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex: auto;
+            margin: 3px;
+            border-radius: 10px;
+        }
+
+    </STYLE>
+</head>
+<body>
+
+    <h2>MAIN-AXIS: Esquerda para a direita <br> 
+        CROSS-AXIS: Cima para baixo</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+        <h2>MAIN-AXIS: Direita para esquerda <br> CROSS-AXIS: Cima para baixo</h2>
+    <div class="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+        <h2>MAIN-AXIS: Cima para baixo <br> CROSS-AXIS: Esquerda para direita </h2>
+    <div class="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>MAIN-AXIS: Baixo para cima <br> CROSS-AXIS: Esquerda para direita</h2>
+    <div class="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
