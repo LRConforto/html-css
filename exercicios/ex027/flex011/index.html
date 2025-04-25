@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <STYLE>
+        div.container {
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div#c1 {
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        div#c2 {
+            height: 40px;
+        }
+
+        div#c3 {
+            height: 40px;
+
+        }
+
+        div.item { 
+            background-color:  #7EBFA1;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+            flex-basis: 200px;
+            border-radius: 8px;
+        }
+
+
+    </STYLE>
+</head>
+<body>
+    <h2>Estatico sem esticar nem encolher</h2>
+    <div class="container" id="c1">
+        <div class="item" style="flex-shrink: 0; flex-grow: 0;">0</div>
+        <div class="item" style="flex-shrink: 0; flex-grow: 0;">0</div>
+        <div class="item" style="flex-shrink: 0; flex-grow: 0;">0</div>
+    </div>
+    <h2>Esticando (grow)</h2>
+    <div class="container" id="c2">
+        <div class="item" style="flex-shrink: 0; flex-grow: 0;">0</div>
+        <div class="item" style="flex-shrink: 0; flex-grow: 2;">2</div>
+        <div class="item" style="flex-shrink: 0; flex-grow: 1;">1</div>
+    </div>
+    <h2>Encolhendo (shrink)</h2>
+    <div class="container" id="c3">
+        <div class="item" style="flex-shrink: 1; flex-grow: 0;">1</div>
+        <div class="item" style="flex-shrink: 0; flex-grow: 0;">0</div>
+        <div class="item" style="flex-shrink: 2; flex-grow: 0;">2</div>
+    </div>
+</body>
+</html>
