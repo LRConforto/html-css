@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+header , nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 { 
+    flex-basis: 40px;
+}
+
+header > span#menuicon {
+    margin-top:10px;
+    display: block;
+    cursor: pointer;
+}
+
+header > nav {
+    width: 90vw;
+    display: none;
+}

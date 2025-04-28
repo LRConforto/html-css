@@ -14,26 +14,60 @@ body {
     width: 100vw;
 }
 
-header { 
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between; 
     background-color: grey;
     color: white;
     padding: 10px;
 }
 
 header > h1 { 
-    border:1px dotted black; /* Para identificar  */
+    /* border:1px dotted black; */ /* Para identificar  */
+    flex:0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
 }
 
-nav { 
-    border:1px dotted black; /* Para identificar  */
+header > span#menuicon {
+    display: none;
 }
 
-main { 
+nav {
+   /*  border:1px dotted black; */ /* Para identificar  */
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px dotted black;
+    text-align: center;
+
+}
+
+header > nav > a:hover { 
+    background-color: white;
+    color: black;
+    transition: background 0.5s;
+}
+
+main {
+    max-width: 1500px; 
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow:2px 2px 3px rgba(0, 0, 0, 0.329); /* direita, baixo, blur */
+    margin: auto;
+    margin-top: 15px;
 }
 
 main > h2 { 
